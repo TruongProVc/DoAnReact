@@ -2,18 +2,14 @@
 import './App.css';
 import Header from './Component/Header'
 import Slidebar from './Component/Sidebar';
-import Content from './Component/Content';
 import Footer from './Component/Footer';
-
+import Content1 from './Component/Content/Content1';
+import Content2 from './Component/Content/Content2';
 
 
 //Import plugins
-import './plugins/swiper-bundle.min.css'
-import './plugins/animate.min.css'
-import './plugins/nice-select.css'
-import './plugins/venobox.min.css'
-import './plugins/jquery.lineProgressbar.css'
-import './plugins/aos.min.css'
+
+// import './plugins/aos.min.css'
 
 // 
 function App() {
@@ -22,7 +18,9 @@ function App() {
  <div>
     <Header/>
     <Slidebar/>
-    <Content/>
+    <Content1/>
+    <Content2/>
+
     <Footer/>
 
  </div>

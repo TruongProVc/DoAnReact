@@ -1,5 +1,8 @@
+
 import React, { useState } from "react";
 import '../Assets/Style.css';
+import '../Assets/style.min.css';
+
 import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'; 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -96,7 +99,7 @@ const Header = () => {
 
       {/* Search Modal */}
       <div id="search" className={`search-modal ${isSearchOpen ? 'open' : ''}`}>
-        <button type="button" className="close" onClick={toggleSearch}>
+        <button type="button" className="close" onClick={toggleSearch} style={{color:'black'}}>
           ×
         </button>
         <form>

@@ -15770,7 +15770,10 @@ input {
 .swiper-container {
     width: 100%;
 }
-
+.product-default-slider-4grid-2row {
+    display: flex;
+    justify-content: space-between;
+  }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
     opacity: 1;
@@ -18932,9 +18935,9 @@ Pages - Contact
 
 .search-modal {
     position: fixed;
-    top: 0px;
+    top: 0px;   
     right: 0px;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: white;
     transition: all 0.5s ease-in-out;
@@ -18945,7 +18948,7 @@ Pages - Contact
 
 .search-modal.open {
     transform: translate(0px, 0px);
-    opacity: 12;
+    opacity: 12;    
 }
 /* body{
     background-color: #f5f5f5;
@@ -18976,7 +18979,7 @@ Pages - Contact
 
 .search-modal .btn {
     position: absolute;
-    top: 18%;
+    top: 20%;
     left: 85%;
     transform: translateX(-50%);
     margin-top: 20px;
@@ -18992,14 +18995,14 @@ Pages - Contact
 }
 .product-list {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 10%);
     width: 80%;
     background: white;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px black;
 }
 
 .product-item {
@@ -19025,7 +19028,7 @@ Pages - Contact
 }
 
 .price {
-    font-size: 18px;    
+    font-size: 18px;
     color: #333;
     margin: 0;
 }
@@ -19035,6 +19038,7 @@ Pages - Contact
     color: #555;
     margin: 30px;
 }
+
 /*****************************
 * Layout - Modal
 *****************************/
@@ -19323,4 +19327,19 @@ Pages - Contact
     margin-right: 10px; /* Khoảng cách giữa ảnh và tên */
   }
   
-    
+    /* Giảm chiều cao của Swiper container */
+   
+    .product-default-single-item {
+        margin-bottom: 30px; /* Thêm khoảng cách dưới mỗi sản phẩm */
+      }
+      
+      /* Nếu bạn muốn thêm khoảng cách giữa các sản phẩm theo chiều ngang (trong 1 hàng) */
+      .product-wrapper .swiper-slide {
+        margin-right: 50px; /* Khoảng cách giữa các sản phẩm trong 1 hàng */
+      }
+      
+      /* Sửa chữa cho sản phẩm cuối cùng trong mỗi hàng */
+      .product-wrapper .swiper-slide:last-child {
+        margin-right: 0; /* Loại bỏ margin phải cho sản phẩm cuối cùng */
+      }
+      
