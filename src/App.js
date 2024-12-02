@@ -1,10 +1,11 @@
 
 import './App.css';
-import Header from './Component/Header'
-import Slidebar from './Component/Sidebar';
-import Footer from './Component/Footer';
-import Content1 from './Component/Content/Content1';
-import Content2 from './Component/Content/Content2';
+import Content from './Component/Content/Content';
+import Footer from './Component/Footer/Footer';
+import Header from './Component/Header/Header';
+import Slidebar from './Component/Slidebar/Sidebar';
+import Login from './Page/User/Login';
+import ProductDetail from './Page/User/ProductDetail';
 
 
 //Import plugins
@@ -17,12 +18,10 @@ function App() {
    
  <div>
     <Header/>
-    <Slidebar/>
-    <Content1/>
-    <Content2/>
-
+    {/* <Slidebar/>
+    <Content/> */}
+    <ProductDetail/>
     <Footer/>
-
  </div>
   );
 }
